@@ -12,7 +12,7 @@ In this project i used:
 - XUnit, Moq, FluentAssertion for unit testing Application layer, i understand that it would be better to implement integration test for elastic serach but it is at it is,
 - bogus to seed data
 
-To run this project just use docker-compose, it has 5 images (composing time is something like 1-2 minutes, in my case):
+To run this project, simply use docker-compose. The project consists of five images. The composition time typically takes about 1 to 1.5 minutes, in my case. Please wait until Kibana starts and establishes a connection before proceeding.
 - elastic
 - kibana
 - elastic_setup - for settuping elastic search, its certificates and parsing them to kibana,
