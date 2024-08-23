@@ -20,12 +20,12 @@ To run this project just use docker-compose, it has 5 images:
 - announcement - API
 
 To use kibana go to localhost:5601
-login: elastic
-password: ElasticPassword
-Go where arrow is pointing and click discower, when announcement will be created it will be shown here
+- login: elastic
+- password: ElasticPassword
+- Go where arrow is pointing and click discower, when announcement will be created it will be shown here
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/1de977b7-e962-4a57-9169-f1c490cfaf6b">
 
-Seq is running here: http://localhost:8081
+- Seq is running here: http://localhost:8081
 
-Postman Endpoints
+- Postman Endpoints
 [AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730540/AnnouncementEndpoints.postman_collection.json)
