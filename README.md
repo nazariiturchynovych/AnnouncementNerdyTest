@@ -1,4 +1,4 @@
-This is test project for NerdySoft trainee position,
+[AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730535/AnnouncementEndpoints.postman_collection.json)This is test project for NerdySoft trainee position,
 
 You can see thta this project has small amount of commits, its my second time i create it, because first time i made mistake with gitignore file and added some files that will crush app if ypu will copy it from git, so i decided to create it second time, to see my previous commit please visit this project https://github.com/nazariiturchynovych/AnnouncementNerdy, it was my firs attempt
 
@@ -10,6 +10,7 @@ In this project i used:
 - Kibana as ES UI,
 - Serilog with Seq to store logs,
 - XUnit, Moq, FluentAssertion for unit testing Application layer, i understand that it would be better to implement integration test for elastic serach but it is at it is,
+- bogus to seed data
 
 To run this project just use docker-compose, it has 5 images:
 - elastic
@@ -27,4 +28,4 @@ Go where arrow is pointing and click discower, when announcement will be created
 Seq is running here: http://localhost:8081
 
 Postman Endpoints
-[AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730258/AnnouncementEndpoints.postman_collection.json)
+[AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730540/AnnouncementEndpoints.postman_collection.json)
