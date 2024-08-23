@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EDCC2DFB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnouncementNerdy.Application.Tests", "AnnouncementNerdy.Application.Tests\AnnouncementNerdy.Application.Tests.csproj", "{3E15345B-D8D7-4B7D-AA16-B588ADD2C00F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD74F2D2-7170-4A94-B7FC-43979846BFDB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6DCBEC70-4866-4297-9AD0-73928CCFA987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,5 +45,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3E15345B-D8D7-4B7D-AA16-B588ADD2C00F} = {EDCC2DFB-2BA2-4B08-A77E-57BEE7DD1618}
+		{124D550F-AEC6-430B-8420-55F5F28613EB} = {BD74F2D2-7170-4A94-B7FC-43979846BFDB}
+		{8981EDCC-D5CA-43EA-9044-0C2ACC2244BF} = {BD74F2D2-7170-4A94-B7FC-43979846BFDB}
+		{BDDD54D8-17F7-4F44-9F9D-1F087E92AC66} = {BD74F2D2-7170-4A94-B7FC-43979846BFDB}
+		{762F7B50-0B14-4593-9380-A583CF217687} = {BD74F2D2-7170-4A94-B7FC-43979846BFDB}
 	EndGlobalSection
 EndGlobal
