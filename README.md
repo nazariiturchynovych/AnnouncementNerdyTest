@@ -27,4 +27,5 @@ Go where arrow is pointing and click discower, when announcement will be created
 Seq is running here: http://localhost:8081
 
 Postman Endpoints
-[AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730127/AnnouncementEndpoints.postman_collection.json)
+
+[AnnouncementEndpoints.postman_collection.json](https://github.com/user-attachments/files/16730203/AnnouncementEndpoints.postman_collection.json)
