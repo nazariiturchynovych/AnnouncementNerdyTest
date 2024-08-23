@@ -30,7 +30,7 @@ public class AnnouncementsController : ControllerBase
         return Ok(await _mediator.Send(new DeleteAnnouncementCommand(id)));
     }
 
-    [HttpPut("{id}")]
+    [HttpPut]
     public async Task<IActionResult> UpdateAnnouncement(UpdateAnnouncementCommand command)
     {
         return Ok(await _mediator.Send(command));
@@ -53,5 +53,11 @@ public class AnnouncementsController : ControllerBase
     public async Task<IActionResult> GetSimilarAnnouncements(string id, OrderBy orderBy)
     {
         return Ok(await _mediator.Send(new GetSimilarAnnouncementsQuery(id, orderBy)));
+    }
+    
+    [HttpPost("seed")]
+    public async Task<IActionResult> SeedAnnouncemets()
+    {
+        return Ok(await _mediator.Send(new SeedAnnouncementsCommand()));
     }
 }

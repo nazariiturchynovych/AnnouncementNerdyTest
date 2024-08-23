@@ -75,5 +75,10 @@ public class AnnouncementRepository : IAnnouncementRepository
         return response.IsValid;
     }
     
-    public async Task<bool> DeleteAsync(string id) => (await _elasticClient.DeleteAsync<Announcement>(id)).IsValid;
+    public async Task<bool> DeleteAsync(string id)
+    {
+        var result = await _elasticClient.DeleteAsync<Announcement>(id);
+
+        return result.IsValid;
+    }
 }
