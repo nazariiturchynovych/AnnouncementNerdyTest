@@ -1,0 +1,27 @@
+name: Build & Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install dependencies
+        run: dotnet restore WebApi
+
+      - name: Build
+        run: dotnet build WebApi --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test WebApi --configuration Release --no-build
