@@ -1,0 +1,28 @@
+name: Build & Test
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install dependencies
+        run: dotnet restore AnnouncementNerdy.sln
+
+      - name: Build
+        run: dotnet build AnnouncementNerdy.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test AnnouncementNerdy.Application.Tests/AnnouncementNerdy.Application.Tests.csproj --configuration Release --no-build
