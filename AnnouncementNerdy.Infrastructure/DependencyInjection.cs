@@ -22,7 +22,7 @@ public static class DependencyInjection
     public static IServiceCollection AddElasticSearch(this IServiceCollection services, IConfiguration configuration)
     {
         var credentials = configuration.GetSection("ElasticsearchSettings");
-        var settings = new ConnectionSettings(new Uri(credentials["uri"]));
+        var settings = new ConnectionSettings(new Uri(credentials["uri"]!));
 
         settings = settings.BasicAuthentication(credentials["username"], credentials["password"])
             .ServerCertificateValidationCallback(CertificateValidations.AllowAll)

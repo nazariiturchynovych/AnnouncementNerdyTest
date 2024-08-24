@@ -29,7 +29,7 @@ public class
 
         try
         {
-            var announcements = await _announcementRepository.GetSimilar(request.Id);
+            var announcements = (await _announcementRepository.GetSimilar(request.Id)).ToList();
 
             if (!announcements.Any())
             {
@@ -40,11 +40,12 @@ public class
             var orderedAnnouncements = request.OrderBy switch
             {
                 OrderBy.Ascending => announcements.OrderBy(x => x.CreatedDate),
-                OrderBy.Descending => announcements.OrderByDescending(x => x.CreatedDate)
+                OrderBy.Descending => announcements.OrderByDescending(x => x.CreatedDate),
+                _ => announcements.OrderBy(x => x.CreatedDate)
             };
         
 
-            return Success(orderedAnnouncements.ToList()!);
+            return Success(orderedAnnouncements.ToList());
         }
         catch (Exception e)
         {
