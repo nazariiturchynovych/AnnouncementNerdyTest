@@ -30,7 +30,7 @@ try
     builder.Services.AddSwaggerGen();
 
     builder.Services.AddHealthChecks()
-        .AddElasticsearch(builder.Configuration.GetSection("ElasticsearchSettings:uri").Value, "Elastic");
+        .AddElasticsearch(builder.Configuration.GetSection("ElasticsearchSettings:uri").Value!, "Elastic");
 
     builder.Services
         .RegisterApplication()
